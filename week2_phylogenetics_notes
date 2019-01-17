@@ -1,0 +1,37 @@
+Intro to Git
+
+Repositories
+    kind of like a folder
+    basic unit that we edit in Git
+    don't have nested respositories
+
+"Commit"
+    like save
+    you commit a repository
+
+Commands
+    All of our commands call the git program
+    So they start with "git"
+    to create a new repository the command is git init
+    git status
+    git log
+
+Commits
+    two stage process
+        working directory to staging area (via git add)
+        then to respository using git commit
+
+Cloning
+    most commonly github to local
+    taking something that is on github and stick in on your own computer
+    need the address of the repository
+    git clone (repository address)
+
+Push and pull
+    if you make changes on your local copy, you can push those commits to the github version
+    if there are changes to the github version, you can pull those changes to your local version
+
+Forking
+    very similar to Cloning
+    rather than copying it onto your computer, you are making a copy that you now own on your own github
+    
