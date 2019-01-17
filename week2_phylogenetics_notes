@@ -8,6 +8,7 @@ Repositories
 "Commit"
     like save
     you commit a repository
+    use the -m "description" flag to comment on the commit. otherwise it puts you into vim to do it
 
 Commands
     All of our commands call the git program
@@ -20,6 +21,7 @@ Commits
     two stage process
         working directory to staging area (via git add)
         then to respository using git commit
+    git log to check commit history
 
 Cloning
     most commonly github to local
@@ -30,8 +32,25 @@ Cloning
 Push and pull
     if you make changes on your local copy, you can push those commits to the github version
     if there are changes to the github version, you can pull those changes to your local version
+    pull request: suggest that the original owner of a repository that you've forked full your changes
 
 Forking
     very similar to Cloning
     rather than copying it onto your computer, you are making a copy that you now own on your own github
-    
+
+Branches
+    maybe you want to make some changes but not changes the original in case you screw something up
+    feature branches-- which you can merge back into the master branch
+        but you can commit changes in the branch without committing them for the master branch
+    git branch nameofbranch
+    git branch alone will show branching pattern
+    asterisk will tell you which branch you are on
+    as will git status
+    git checkout to switch branches
+    git log --graph will show the structure of your branches
+    if you switch back to the master branch you won't see the changes that were made in the other branch
+    merging branches
+        go to master branch
+        git merge branch_name
+    after merging you can delete a feature branch:
+        git branch -d branch_name
